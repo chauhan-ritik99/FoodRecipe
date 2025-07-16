@@ -1,0 +1,308 @@
+.main{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.nav{
+  background-color: #0d0de1;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 17%;
+}
+
+.left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16%;
+  margin-left: 10px;
+}
+
+.search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search input{
+  width: 25rem;
+  height: 26px;
+}
+
+   
+.left:hover{
+   background-color: rgb(28, 28, 61);
+   
+}  
+
+
+.right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 43%;
+}
+
+.right div{
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.right div:hover{
+  background-color: rgb(28, 28, 61);
+}
+
+.slider{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  margin-left: 2rem;
+  perspective: 800px;
+}
+
+.slider img{
+  border-radius: 5%;
+  border: 2px solid rgb(87, 87, 165);
+  transition: transform 0.3s ease;
+}
+
+.slider img:hover{
+  transform: translateZ(100px);
+  border: 2px solid yellow;
+}
+
+.slider2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 800px;
+  width: 98%;
+  margin: 1rem;
+}
+
+.slider2 img{
+  border-radius: 5%;
+  border: 2px solid rgb(87, 87, 165);
+  transition: transform 0.3s ease;
+}
+
+.slider2 img:hover{
+  transform: translateZ(150px);
+  border: 2px solid yellow;
+}
+
+.btn{
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: yellow;
+  border-radius: 5%;
+  margin: 2rem;
+  border: 2px solid blue;
+}
+
+.img{
+  perspective: 800px;
+}
+
+.img img{
+  border-radius: 5%;
+  border: 2px solid rgb(87, 87, 165);
+  transition: transform 0.3s ease;
+}
+
+.img img:hover{
+  transform: translateZ(100px);
+  border: 2px solid yellow;
+}
+
+.link{
+  text-decoration: none;
+  color: white;
+}
+/* 
+@media only screen and (max-width: 1024px) {
+  .nav {
+    height: 15%;
+  }
+
+  .left, .right {
+    width: 40%;
+  }
+
+  .search input {
+    width: 20rem;
+  }
+
+  .slider img, .slider2 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .btn {
+    width: 90%;
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left, .right {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .search input {
+    width: 18rem;
+  }
+
+  .slider img, .slider2 img {
+    width: 90%;
+    height: auto;
+  }
+
+  .btn {
+    width: 80%;
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .nav {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .left, .right {
+    width: 100%;
+  }
+
+  .search input {
+    width: 15rem;
+  }
+
+  .slider img, .slider2 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .btn {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  .right div {
+    font-size: 1rem;
+  }
+}  */
+
+
+
+
+@media only screen and (max-width: 1024px) {
+  .nav {
+    height: auto;
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+
+  .left, .right {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 0;
+  }
+
+  .search input {
+    width: 80%;
+    max-width: 20rem;
+  }
+
+  .slider img, .slider2 img {
+    width: 90%;
+    height: auto;
+  }
+
+  .btn {
+    width: 80%;
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem 0;
+  }
+
+  .left, .right {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0.5rem 0;
+  }
+
+  .search input {
+    width: 85%;
+  }
+
+  .slider, .slider2 {
+    flex-direction: column;
+  }
+
+  .slider img, .slider2 img {
+    width: 95%;
+  }
+
+  .btn {
+    width: 90%;
+    font-size: 0.9rem;
+  }
+
+  .right div {
+    padding: 0.5rem;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .nav {
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+
+  .left, .right {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .search input {
+    width: 90%;
+    font-size: 0.9rem;
+  }
+
+  .slider img, .slider2 img {
+    width: 100%;
+  }
+
+  .btn {
+    width: 95%;
+    font-size: 0.8rem;
+    margin: 1rem auto;
+  }
+
+  .right div {
+    font-size: 1rem;
+    padding: 0.3rem;
+  }
+}
